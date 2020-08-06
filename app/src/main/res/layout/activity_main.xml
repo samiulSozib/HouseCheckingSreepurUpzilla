@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#7f333639"
+            android:elevation="4dp"
+            app:title="ইউ এন ও, শ্রীপুর মাগুরা"
+            app:titleTextColor="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:background="@color/text_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:text="মুজিববর্ষে জমি আছে ঘর নেই প্রকল্পে সুবিধাভোগী যাচাই ফর্ম"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:text="শ্রীপুর উপজেলা"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/goyespur_union"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="goyespur_union"
+                        android:text="গয়েশপুর"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/amolsar_union"
+                        android:text="আমলসার"
+                        android:onClick="amolsar_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/sreekhol_union"
+                        android:text="শ্রীকোল"
+                        android:onClick="sreekol_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/sreepur_union"
+                        android:text="শ্রীপুর"
+                        android:onClick="sreepur_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/dariapur_union"
+                        android:text="দ্বারিয়াপুর	"
+                        android:onClick="dariapur_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/kadirparaa_union"
+                        android:text="কাদিরপাড়া"
+                        android:onClick="kadirpara_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/sobdalpur_union"
+                        android:text="সব্দালপুর"
+                        android:onClick="sobdalpur_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="30sp"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/nakol_union"
+                        android:text="নাকোল"
+                        android:onClick="nakol_union"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="#ff0000"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "680087204581",
+    "firebase_url": "https://house-check-5bbe8.firebaseio.com",
+    "project_id": "house-check-5bbe8",
+    "storage_bucket": "house-check-5bbe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680087204581:android:610ef8c78e06a3ffc11a0c",
+        "android_client_info": {
+          "package_name": "com.example.housecheckingsreepur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680087204581-3a7vloib71en26sftmk88qafp9s1pad6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.housecheckingsreepur",
+            "certificate_hash": "054b55930944fd55c74d21276791b24b3199222d"
+          }
+        },
+        {
+          "client_id": "680087204581-m7gqlmou3e1hsm14up50q0samoeub4t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1zG7nILCnwFFGuMww5nC1uXF6DYCFsYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680087204581-m7gqlmou3e1hsm14up50q0samoeub4t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

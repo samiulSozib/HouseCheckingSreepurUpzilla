@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Amolsar_Union">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/show_data"
+            android:text="আপনার ডাটা চেক করুন"
+            android:onClick="showData"
+            android:textColor="#fff"
+            android:background="#000"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="আমলসার"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="উপকারভোগীর নাম"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/uokar_vogi_id"
+                android:hint="এখানে লিখুন"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="উপকারভোগীর পিতা/স্বামীর নাম"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/upkar_vodi_pita_sami_id"
+                android:hint="এখানে লিখুন"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ইউনিয়ন"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="আমলসার"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ওয়ার্ড"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/word_number_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="গ্রাম /পাড়া /মহল্লা"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/gram_id_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text=" জন্ম তারিখ "
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/montobbo_id"
+                android:hint="day/month/year"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="জাতীয় পরিচয়পত্র নং"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/national_id"
+                android:hint="এখানে লিখুন"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="পুনরায় জাতীয় পরিচয়পত্র নং"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/confirm_national_id"
+                android:hint="এখানে লিখুন"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="মোবাইল নং"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/mobile_number"
+                android:hint="এখানে লিখুন"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="পুনরায় মোবাইল নং"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/condirm_mobile_number"
+                android:hint="এখানে লিখুন"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="আবেদনকারির মোট জমির পরিমান"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/jomir_poriman_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="উপকারভোগী সহ জরাজীর্ণ ঘরের ছবি"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/image_id"
+                android:onClick="selectImage"
+                android:src="@drawable/images"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="যাচাইকারীর নাম, পদবী, মোবাইল নং"
+                android:background="@color/text_view_background"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/jacaikari_id"
+                android:hint="এখানে লিখুন"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_id"
+                android:text="Remember Information"
+                android:layout_gravity="center"
+                android:textColor="#FA0404"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:text="Submission"
+            android:textColor="@color/text_color"
+            android:background="@color/colorAccent"
+            android:onClick="add_user_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
